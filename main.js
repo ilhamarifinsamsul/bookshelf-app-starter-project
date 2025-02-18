@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const year = document.getElementById("bookFormYear").value;
     const isComplete = document.getElementById("bookFormIsComplete").checked;
     addBook(title, author, year, isComplete);
-    bookForm.reset();
+    e.target.reset();
   });
 
   searchForm.addEventListener("submit", (e) => {
